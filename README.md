@@ -1,6 +1,6 @@
-# 568-Final-Project
+# LOAM
 
-This is Team 18's final project git repository for EECS 568: Mobile Robotics. The title of our project is Visual Lidar Odometry and Mapping with KITTI, and team members include: Ali Abdallah, Alexander Crean, Mohamad Farhat, Alexander Groh, Steven Liu and Christopher Wernette.
+This is implementation of Lidar Odometry and Mapping. This repository has been forked from https://github.com/stevenliu216/568-Final-Project
 
 A sample ROS bag file, cut from sequence 08 of KITTI, is provided [here](https://drive.google.com/open?id=1r7nlpAfTL3p1pqSlM7zTQDmk9sHpClZ_).
 
@@ -12,7 +12,7 @@ You can see the results of the algorithm running here:
 
 ## Getting Started
 
-First, we recommend you read through our paper uploaded on this repository. Next, read the three directly related works: VLOAM, LOAM, and DEMO.
+First, we recommend you read through the paper uploaded on this repository. Next, read the three directly related works: VLOAM, LOAM, and DEMO.
 
 We recommend you read through the original [V-LOAM](http://www.frc.ri.cmu.edu/~jizhang03/Publications/ICRA_2015.pdf) paper by Ji Zhang and Sanjiv Singh as a primer. Follow that up with the [LOAM](https://www.ri.cmu.edu/pub_files/2014/7/Ji_LidarMapping_RSS2014_v8.pdf) paper by the same authors. Finally, conclude with reading [DEMO](http://www.frc.ri.cmu.edu/~jizhang03/Publications/IROS_2014.pdf) paper by Ji Zhang et all. These will give you theoretical understanding of the V-LOAM algorithm, and all three provide many references for further reading.
 
@@ -109,5 +109,4 @@ Next, you will need to download the ground truth data from the KITTI ground trut
 
 ## Acknowledgments
 
-Thank you to Maani Ghaffari Jadidi our EECS 568 instructor, as well as the GSIs Lu Gan and Steven Parkison for all the support they provided this semester. You can find a link to our course website [here](http://robots.engin.umich.edu/mobilerobotics/).
 We would like to acknowledge Ji Zhang and Sanjiv Singh, for their original papers and source code, as well as Leonid Laboshin for the modified version of Ji Zhang and Sanjiv Singh's code, which was taken down. Leonid's repository can be found [here](https://github.com/laboshinl/loam_velodyne).
