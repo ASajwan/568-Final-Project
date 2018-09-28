@@ -13,8 +13,8 @@ close all
 clear
 clc
 
-%% Paramters you can change
-sequenceNumber = '08'; %change this to which sequence you want analyzed
+%% Parameters you can change
+sequenceNumber = '09'; %change this to which sequence you want analyzed
 plotInRealTime = 1; %used to plot errors and position in real time to see where they stem from while moving
 %rotatation needed for points, changes per data set
 translateAndRotate = 1; %used to apply translation and rotation
@@ -84,8 +84,10 @@ fclose(fileID);
 
 %% Translate, rotate, and use only necessary results
 deltaLength = length(position)-length(groundTruth);
+%deltaLength = length(groundTruth) - length(position);
 if translateAndRotate == 1
     deltaLength = length(position)-length(groundTruth);
+    %deltaLength = length(groundTruth) - length(position);
     %apply rotation to true x and y coordinates (x and z in file)
     i = 1;
     while i <= length(position)
@@ -136,6 +138,7 @@ saveas(gcf, [picturesPath sequenceNumber 'GTvR.png'])
 
 %% Calculate translation and rotation error over time
 for i = 2:length(groundTruth)
+    %for i = 2:length(position)
     %calculate translation error
     dxP = (convertPosition(i-1,1)-convertPosition(i,1));
     dyP = (convertPosition(i-1,2)-convertPosition(i,2));

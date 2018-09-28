@@ -102,7 +102,7 @@ Note: You can also record the topic aft_mapped_to_init or integrated_to_init in 
 In order to run the benchmarking code, which computes errors as well as plots the odometry vs ground truth pose, you will need to echo out the x, y, z positions of the vehicle to a text file which we will then post process.
 To do this, open a third terminal and type this command before running the .bag file:
 ```
-$ rostopic echo /laser_odom_to_init/pose/pose/position > FILENAME.txt
+$ rostopic echo /laser_odom_to_init/pose/pose > FILENAME.txt
 ```
 
 Next, you will need to download the ground truth data from the KITTI ground truth poses from [here](http://www.cvlibs.net/datasets/kitti/eval_odometry.php). Move your echoed out file and the raw data file to the Benchmarking directory which contains our script. You will need to modify this script to match your filenames but otherwise no additional modification is needed.
